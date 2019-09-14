@@ -1,0 +1,148 @@
+/* CSS RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* CABEÇALHO */
+header{
+    background-image: url("https://csharp-station.com/wp-content/uploads/2019/08/Person-coding-on-laptop-1200x794.jpg");
+    background-position: center;
+    padding-bottom: 20px; 
+}
+.cabecalho__corpo{
+    margin-top: 20px;
+    text-align: center;
+}
+.cabecalho__titulo{
+    padding: 3px;
+}
+.cabecalho__texto{
+    margin-bottom: 20px;
+    background-color:rgba(241, 196, 15, 0.7);
+    padding: 20px;
+    display: inline-block;
+}
+
+.botao_inscricao{
+    margin-top: 20px;
+    background-color: #E74C3C;
+    border-radius: 5px;
+    color: white;
+    width: 98px;
+    height: 29px;
+    border: 0;
+}
+
+
+/* MAIN */
+.maratona__titulos{
+    text-align: center;
+    margin: 40px;
+}
+.maratona__titulos--subtitulo{
+    margin-top: 20px;
+    font-size: 20px;
+}
+.maratona__texto{
+    max-width: 327px;
+    margin: 20px auto;
+}
+
+/* PROGRAMAÇÃO */
+.programacao__titulo{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.table{
+    max-width: 327px;
+    margin: 0 auto;
+}
+ .table{
+    border: 1px black solid;
+    border-collapse: collapse;
+  }
+  .table th, .table td{
+    padding: 10px;
+  }
+
+  .table tr:nth-child(1){
+    background-color: lightgray;
+  }
+  .table tr:not(:nth-child(1)):hover{     
+    background-color: rgba(241, 196, 15, 0.7);
+  }
+
+  /* LOCALIZAÇÃO */
+  .localizacao__titulo{
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+  }
+  .localizacao__mapa{
+    display: flex;
+    justify-content: center;
+  }
+
+  /* CONTATO */
+  .contato{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .contato__titulo{
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 30px;
+  }
+  .contato__formulario--label{
+      margin-left: 20px;
+  }
+  .contato__formulario--campo{
+    border: 1px solid #F1C40F;
+    margin: 10px 20px 20px;
+    width: 322px;
+    height: 30px;
+  }
+  .contato__formulario--campo-msg{
+    border: 1px solid #F1C40F;
+    margin: 7px 20px 15px;
+    width: 322px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+
+
+  /* RODAPE */
+  .rodape{
+      background-color: #F1C40F;
+      padding: 90px;
+  }
+.rodape__imagens{
+    display: flex;
+    justify-content: center;
+}
+.rodape__logo{
+    width: 70px;
+    height: 84px;
+    margin-bottom: 40px;
+}
+.rodape__textos{
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.rodape__titulo{
+    font-weight: bold;
+    text-align: center;
+}
+.rodape__endereco{
+    max-width: 322px;
+    text-align: center;
+}
