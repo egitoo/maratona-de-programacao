@@ -10,30 +10,43 @@
 </head>
 
 <body>
-    <header class="cabecalho container">
+    <header class="cabecalho ">
+        <nav class="menu">
+            <ul class="menu__sub ">
+                <li class="menu__item"><a href="#">Início</a></li>
+                <li class="menu__item"><a href="#secao__sobre">Sobre</a></li>
+                <li class="menu__item"><a href="#secao__programacao">Programação</a></li>
+                <li class="menu__item"><a href="#secao__localizacao">Localização</a></li>
+                <li class="menu__inscricao"><button class="botao_inscricao">Inscrição</button></li>
+            </ul>
+        </nav>
         <div class="cabecalho__corpo ">
             <div class="cabecalho__titulo">
                 <h1 class="cabecalho__texto">XXIII MARATONA SBC DE PROGRAMAÇÃO</h1>
             </div>
-            <div>
-                <h2 class="cabecalho__texto">Primeira fase: 15 de setembro</h2>
+            <nav>
+                <div class="cabecalho__subtitulo">
+                    <h2 class="cabecalho__texto">Primeira fase: 15 de setembro</h2>
+                </div>
+                <div>
+                    <p class="cabecalho__texto">Vilhena - RO</p>
+                </div>
+                <div>
+                    <p class="cabecalho__texto">IFRO - Instituto Federal de Rondônia</p>
+                </div>
+                <div class="cabecalho__botao">
+                <button class="botao_inscricao">Inscrição</button>
             </div>
-            <div>
-                <p class="cabecalho__texto">Vilhena - RO</p>
-            </div>
-            <div>
-                <p class="cabecalho__texto">IFRO - Instituto Federal de Rondônia</p>
-            </div>
-            <button class="botao_inscricao">Inscrição</button>
         </div>
     </header>
 
     <main>
-        <section class="maratona container">
+        <section class="maratona container" id="secao__sobre">
             <div class="maratona__titulos">
                 <h1>Sobre</h1>
                 <h1 class="maratona__titulos--subtitulo">I Fase da Maratona de Programação da SBC - Etapa Regional</h1>
             </div>
+            <div style="margin: 20px">
             <p class="maratona__texto">A Maratona de Programação é um evento da Sociedade Brasileira de Computação que
                 existe desde o ano de 1996. A Maratona nasceu das competições regionais classificatórias para as finais
                 mundiais do concurso de programação da ACM, o ACM International Collegiate Programming Contest, e é
@@ -58,10 +71,12 @@
                 problema (ou seja, que deu resposta incorreta a uma das instâncias dos juízes) é atribuída uma
                 penalidade de tempo. O time que conseguir resolver o maior número de problemas (no menor tempo acumulado
                 com as penalidades, caso haja empate) é declarado o vencedor.</p>
+                </div>
         </section>
 
-        <section class="programacao container">
+        <section class="programacao container" id="secao__programacao">
             <h1 class="programacao__titulo">Programação</h1>
+            <div style="margin: 20px">
             <table class="table">
                 <tr>
                     <th>Data</th>
@@ -96,12 +111,15 @@
                     <td>Final Brasileira da XXIV Maratona de Programação em Campina Grande.</td>
                 </tr>
             </table>
+        </div>
         </section>
 
-        <section class="localizacao container">
+        <section class="localizacao container" id="secao__localizacao">
             <h1 class="localizacao__titulo">Localização</h1>
             <div class="localizacao__mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3187.3890066054687!2d-60.12102462131332!3d-12.70450635798548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93b96be3e6498bd7%3A0x66ce4f62185d43bb!2sInstituto%20Federal%20de%20Rond%C3%B4nia%20-%20Campus%20Vilhena!5e1!3m2!1spt-BR!2sbr!4v1568501125863!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.07626319003!2d-60.12102998561825!3d-12.704511591031457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93b96be3e6498bd7%3A0x66ce4f62185d43bb!2sInstituto%20Federal%20de%20Rond%C3%B4nia%20-%20Campus%20Vilhena!5e1!3m2!1spt-BR!2sbr!4v1568509809053!5m2!1spt-BR!2sbr"
+                    width="725" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
         </section>
 
@@ -113,24 +131,28 @@
             </div>
 
             <div class="contato__formulario">
-                    <label for="email" class="contato__formulario--label">E-mail: </label>
-                    <div><input type="email" class="contato__formulario--campo" id="email" required></div>
-                </div>
+                <label for="email" class="contato__formulario--label">E-mail: </label>
+                <div><input type="email" class="contato__formulario--campo" id="email" required></div>
+            </div>
 
-                <div class="contato__formulario">
-                        <label for="mensagem" class="contato__formulario--label">Mensagem: </label>
-                        <div><input type="text" class="contato__formulario--campo-msg" id="mensagem" required></div>
-                    </div>
+            <div class="contato__formulario--mensagem">
+                <label for="mensagem" class="contato__formulario--label">Mensagem: </label>
+                <div><input type="text" class="contato__formulario--campo-msg" id="mensagem" required></div>
+            </div>
+            <button class="botao_enviar-formulario">Enviar</button>
+            </div>
+            </div>
         </section>
 
         <footer class="rodape">
             <div class="rodape__imagens">
-            <img src="assets/images/logo_ifro.png" class="rodape__logo" alt="Logotipo do IFRO">
-        </div>
-        <div class="rodape__textos">
-            <div class="rodape__titulo">IFRO Campus Vilhena</div>
-            <div class="rodape__endereco">Endereço: Rodovia BR 174, KM 3 S/n Zona Urbana, Vilhena - RO, 76980-000 <br>Telefone: (69) 2101-0700</br></div>
-        </div>
+                <img src="assets/images/logo_ifro.png" class="rodape__logo" alt="Logotipo do IFRO">
+            </div>
+            <div class="rodape__textos">
+                <div class="rodape__titulo">IFRO Campus Vilhena</div>
+                <div class="rodape__endereco">Endereço: Rodovia BR 174, KM 3 S/n Zona Urbana, Vilhena - RO, 76980-000
+                    <br>Telefone: (69) 2101-0700</br></div>
+            </div>
         </footer>
 
 
