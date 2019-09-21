@@ -34,14 +34,14 @@ header{
     list-style: none;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;  /*mobile*/
+    margin-top: 43px;  /*mobile*/
     margin-left: -18px; /*mobile*/
     width: 150px;   /*mobile*/
 }
 .label__menu{
     font-size: 3.0em;
     position: absolute;
-    margin-top: -15px;
+    margin-top: -20px;
     color: white;
 }
 @media(min-width: 600px) {
@@ -84,12 +84,11 @@ header{
       }
   }
 .menu__item > a{
-    padding: 5px;
+    padding: 5px 15px;
     text-decoration: none;
     color: black;
     display: block;
     font-size: 14px;
-    padding-right: 15px;
     border: 1px solid black;    /*mobile*/
     background-color: rgba(241, 196, 15, 0.7);  /*mobile*/
   }
@@ -101,6 +100,7 @@ header{
   }
 .menu__item > a:hover{
     background-color: white;
+    border-radius: 5px;
   }
 
 .cabecalho__corpo{
@@ -120,6 +120,7 @@ header{
     font-weight: normal;
 }
 .botao_inscricao{
+    margin-left: 10px;
     margin-top: 20px;
     background-color: #E74C3C;
     border-radius: 5px;
@@ -127,6 +128,7 @@ header{
     width: 98px;
     height: 29px;
     border: 0;
+    cursor: pointer;
 }
 @media(min-width: 600px) {
     .botao_inscricao{
@@ -265,8 +267,9 @@ header{
         }
         .botao_enviar-formulario{
             width: 80px;
-            margin-left: 690px;
+            margin-left: 680px;
             margin-top: -10px;
+            cursor: pointer;
         }
 }
 
