@@ -23,6 +23,8 @@ header{
         padding-bottom: 50px;
     }
 }
+
+/* MENU */
 .menu{
     position: absolute;
     margin-left: 20px;
@@ -32,6 +34,29 @@ header{
     list-style: none;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;  /*mobile*/
+    margin-left: -18px; /*mobile*/
+    width: 150px;   /*mobile*/
+}
+.label__menu{
+    font-size: 3.0em;
+    position: absolute;
+    margin-top: -15px;
+    color: white;
+}
+@media(min-width: 600px) {
+    .label__menu{
+        display: none;
+    }
+}
+.input__menu{
+    display: none;
+}
+#nav ul {
+    display: none;
+}
+#nav .input__menu:checked ~ ul {
+    display: flex;
 }
 @media(min-width: 600px){
     .menu{
@@ -44,7 +69,13 @@ header{
       justify-content: center;
       background-color: rgba(229, 229, 229, 0.5);
       padding: 5px;
-      margin-bottom: 70px;
+      margin-bottom: 70px;  
+      margin-top: 0;
+      margin-left: 0;
+      width: 100%; 
+    }
+    #nav ul{
+        display: inline-flex;
     }
   }
   @media(max-width: 600px) {
@@ -59,10 +90,19 @@ header{
     display: block;
     font-size: 14px;
     padding-right: 15px;
+    border: 1px solid black;    /*mobile*/
+    background-color: rgba(241, 196, 15, 0.7);  /*mobile*/
+  }
+  @media(min-width: 600px) {
+      .menu__item > a{
+      background-color: transparent;
+      border: none;
+      }
   }
 .menu__item > a:hover{
     background-color: white;
   }
+
 .cabecalho__corpo{
     text-align: center;
 }
@@ -188,18 +228,18 @@ header{
       margin-bottom: 30px;
   }
   .contato__formulario--label{
-      margin-left: 20px;
+      margin-left: auto;
   }
   .contato__formulario--campo{
     border: 1px solid #F1C40F;
-    margin: 10px 20px 20px;
-    width: 322px;
+    margin: 10px auto 20px;
+    width: 310px;
     height: 30px;
   }
   .contato__formulario--campo-msg{
     border: 1px solid #F1C40F;
-    margin: 7px 20px 15px;
-    width: 322px;
+    margin: 7px auto 15px;
+    width: 310px;
     height: 120px;
     margin-bottom: 30px;
   }
