@@ -41,7 +41,7 @@ header{
 .label__menu{
     font-size: 3.0em;
     position: absolute;
-    margin-top: -40px;
+    margin-top: -20px;
     margin-left: -10px;
 }
 @media(min-width: 600px) {
