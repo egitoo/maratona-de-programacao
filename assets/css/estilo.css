@@ -97,10 +97,10 @@ header{
       background-color: transparent;
       border: none;
       }
-  }
-.menu__item > a:hover{
-    background-color: white;
-    border-radius: 5px;
+      .menu__item > a:hover{
+        background-color: white;
+        border-radius: 5px;
+      }
   }
 
 .cabecalho__corpo{
