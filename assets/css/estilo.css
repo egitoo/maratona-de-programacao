@@ -124,7 +124,7 @@ header{
     margin-top: 20px;
     background-color: #E74C3C;
     border-radius: 5px;
-    color: white;
+    color: #FFF9EA;
     width: 98px;
     height: 29px;
     border: 0;
@@ -248,7 +248,7 @@ header{
   .botao_enviar-formulario{
     background-color: #F1C40F;
     border-radius: 5px;
-    color: white;
+    color: #FFF9EA;
     width: 180px;
     height: 29px;
     border: 0;
@@ -284,12 +284,10 @@ header{
     justify-content: center;
 }
 .rodape__logo{
-    width: 70px;
-    height: 84px;
     margin-bottom: 20px;
 }
 .rodape__textos{
-    color: white;
+    color: #FFF9EA;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
